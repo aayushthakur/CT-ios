@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CTDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikg-Vy-gaM">
+                                <rect key="frame" x="175.5" y="146" width="24" height="14"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAi-wp-Kak">
+                                <rect key="frame" x="99" y="239" width="177" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="QSu-OF-fma"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Login/Sign Up">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onClickofLoginButtonWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="17N-tP-BpF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkN-f4-6NK">
+                                <rect key="frame" x="99" y="360" width="177" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Profile Update">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="updateProfileWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J0g-LY-c96"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lNH-ei-15z">
+                                <rect key="frame" x="57.5" y="444" width="260" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="arn-Ae-iI3"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Product Viewed Event">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="productViewedEventWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="82a-FR-uVE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ikg-Vy-gaM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0cN-AA-kYx"/>
+                            <constraint firstItem="lNH-ei-15z" firstAttribute="top" secondItem="rkN-f4-6NK" secondAttribute="bottom" constant="40" id="4CU-Aj-OXD"/>
+                            <constraint firstItem="rkN-f4-6NK" firstAttribute="top" secondItem="mAi-wp-Kak" secondAttribute="bottom" constant="86" id="8Qd-vM-oCZ"/>
+                            <constraint firstItem="rkN-f4-6NK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nyp-eQ-pJr"/>
+                            <constraint firstItem="mAi-wp-Kak" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="239" id="Tqe-Ys-pT3"/>
+                            <constraint firstItem="lNH-ei-15z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UFU-Su-Vq6"/>
+                            <constraint firstItem="mAi-wp-Kak" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cKs-3P-hka"/>
+                            <constraint firstItem="mAi-wp-Kak" firstAttribute="top" secondItem="ikg-Vy-gaM" secondAttribute="bottom" constant="79" id="qeW-Ms-nsQ"/>
+                            <constraint firstItem="mAi-wp-Kak" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rOk-O4-0G9"/>
+                            <constraint firstItem="mAi-wp-Kak" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rkN-f4-6NK" secondAttribute="trailing" id="rbF-rA-9tf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112.8" y="43.628185907046479"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,26 @@
+PODS:
+  - CleverTap-iOS-SDK (4.1.1):
+    - SDWebImage (~> 5.1)
+  - CTNotificationService (0.1.5)
+  - SDWebImage (5.13.2):
+    - SDWebImage/Core (= 5.13.2)
+  - SDWebImage/Core (5.13.2)
+
+DEPENDENCIES:
+  - CleverTap-iOS-SDK
+  - CTNotificationService
+
+SPEC REPOS:
+  trunk:
+    - CleverTap-iOS-SDK
+    - CTNotificationService
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  CleverTap-iOS-SDK: b7f1e914ce99e24df606995a465b39ef90528d58
+  CTNotificationService: 844eb0cf5a6260b76e05420dde49312b72c5ad7c
+  SDWebImage: 72f86271a6f3139cc7e4a89220946489d4b9a866
+
+PODFILE CHECKSUM: 742d1ab1ee778f1473af4017f4e03a8c975a0462
+
+COCOAPODS: 1.11.3
